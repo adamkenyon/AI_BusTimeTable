@@ -19,12 +19,11 @@ static int[][] busRoutesArray = new int [3][5];
     public static void main(String[] args) {
         // TODO code application logic here
         createRoutes();
-        System.out.print("Done");
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 5; y++) {
             System.out.print(busRoutesArray[x][y]);
             }
-            System.out.print("/");
+            System.out.print(" / ");
         }
     }
     
