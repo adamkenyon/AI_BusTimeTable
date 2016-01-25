@@ -15,6 +15,7 @@ public class Ai_Bus {
 
     static int[][] busRoutesArray = new int[3][5];
     static int passengerNumber = 100;
+    static int[] routeTotals = new int[3];
     static int routeOneTotal = 0;
     static int routeTwoTotal = 0;
     static int routeThreeTotal = 0;
@@ -58,31 +59,20 @@ public class Ai_Bus {
 
     public static void createPassengers() {
         for (int y = 0; y < 5; y++) {
-            if (busRoutesArray[0][y] == 0) {
-                routeOneTotal = routeOneTotal + (passengerNumber - 75);
-            } else if (busRoutesArray[0][y] == 1) {
-                routeOneTotal = routeOneTotal + passengerNumber;
-            } else if (busRoutesArray[0][y] == 2) {
-                routeOneTotal = routeOneTotal + (passengerNumber + 75);
-            }
-            if (busRoutesArray[1][y] == 0) {
-                routeTwoTotal = routeTwoTotal + (passengerNumber - 75);
-            } else if (busRoutesArray[1][y] == 1) {
-                routeTwoTotal = routeTwoTotal + passengerNumber;
-            } else if (busRoutesArray[1][y] == 2) {
-                routeTwoTotal = routeTwoTotal + (passengerNumber + 75);
-            }
-            if (busRoutesArray[2][y] == 0) {
-                routeThreeTotal = routeThreeTotal + (passengerNumber - 75);
-            } else if (busRoutesArray[2][y] == 1) {
-                routeThreeTotal = routeThreeTotal + passengerNumber;
-            } else if (busRoutesArray[2][y] == 2) {
-                routeThreeTotal = routeThreeTotal + (passengerNumber + 75);
-            }
+            for (int x = 0; x < 3; x++) {
+                    int route = busRoutesArray[x][y];
+                    switch (route) {
+                        case 0: routeTotals[x] += (passengerNumber - 75);
+                            break;
+                        case 1: routeTotals[x] += (passengerNumber);
+                            break;
+                        case 2: routeTotals[x] += (passengerNumber + 75);    
+                    }
+                }
         }
-        System.out.print("Route One Total = " + routeOneTotal + " / ");
-        System.out.print("Route Two Total = " + routeTwoTotal + " / ");
-        System.out.print("Route Three Total = " + routeThreeTotal + " / ");
+        System.out.print("Route One Total = " + routeTotals[0] + " / ");
+        System.out.print("Route Two Total = " + routeTotals[1] + " / ");
+        System.out.print("Route Three Total = " + routeTotals[2]+ " / ");
         System.out.print("\n");
     }
 
