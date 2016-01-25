@@ -14,10 +14,18 @@ import java.util.Random;
 public class Ai_Bus {
 
     static int[][] busRoutesArray = new int[3][5];
+<<<<<<< HEAD
     static int routeOneTotal = 0;
     static int routeTwoTotal = 0;
     static int routeThreeTotal = 0;
     static int passengerPerStop = 125;
+=======
+    static int passengerNumber = 100;
+    static int[] routeTotals = new int[3];
+    static int routeOneTotal = 0;
+    static int routeTwoTotal = 0;
+    static int routeThreeTotal = 0;
+>>>>>>> origin/master
 
     /**
      * @param args the command line arguments
@@ -58,6 +66,7 @@ public class Ai_Bus {
 
     public static void createPassengers() {
         for (int y = 0; y < 5; y++) {
+<<<<<<< HEAD
             if (busRoutesArray[0][y] == 0) {
                 routeOneTotal = routeOneTotal + (passengerPerStop - 75);
             } else if (busRoutesArray[0][y] == 1) {
@@ -85,15 +94,39 @@ public class Ai_Bus {
         System.out.print("Route Two Passenger Count = " + routeTwoTotal);
         System.out.print("\n");
         System.out.print("Route Three Passenger Count = " + routeThreeTotal);
+=======
+            for (int x = 0; x < 3; x++) {
+                    int route = busRoutesArray[x][y];
+                    switch (route) {
+                        case 0: routeTotals[x] += (passengerNumber - 75);
+                            break;
+                        case 1: routeTotals[x] += (passengerNumber);
+                            break;
+                        case 2: routeTotals[x] += (passengerNumber + 75);    
+                    }
+                }
+        }
+        System.out.print("Route One Total = " + routeTotals[0] + " / ");
+        System.out.print("Route Two Total = " + routeTotals[1] + " / ");
+        System.out.print("Route Three Total = " + routeTotals[2]+ " / ");
+>>>>>>> origin/master
         System.out.print("\n");
     }
 
     public static void createBuses() {
+<<<<<<< HEAD
         //4 Buses 
     }
 
     public static void assignBuses() {
        
+=======
+        //4 Buses    
+    }
+
+    public static void assignBuses() {
+
+>>>>>>> origin/master
     }
 
 }
