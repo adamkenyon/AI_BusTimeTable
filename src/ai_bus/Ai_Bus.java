@@ -23,7 +23,7 @@ public class Ai_Bus {
     public static void printResults() {
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 5; y++) {
-                System.out.print(Route.busRoutesArray[x][y]);
+                System.out.print(Route.routes[x][y].type);
             }
             System.out.print(" / ");
         }

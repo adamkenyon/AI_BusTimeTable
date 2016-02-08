@@ -26,7 +26,7 @@ public class Passenger {
      public static void createPassengers() {
         for (int y = 0; y < 5; y++) {
             for (int x = 0; x < 3; x++) {
-                    int route = Route.busRoutesArray[x][y];
+                    int route = Route.routes[x][y].type;
                     switch (route) {
                         case 0: routeTotals[x] += (passengerNumber - 75);
                             break;

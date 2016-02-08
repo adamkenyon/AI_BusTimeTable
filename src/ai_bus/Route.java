@@ -11,29 +11,25 @@ import java.util.Random;
  */
 public class Route {
     //Represents the routes. Holds a number of BusStop objects.
-    static BusStop[][] routes;
+    //static BusStop[][] routes;
+    static BusStop[][] routes = new BusStop[3][5];
     
-    static int[][] busRoutesArray = new int[3][5];
+    //static int[][] busRoutesArray = new int[3][5];
     
     public static void createRoutes() {
         //3 Routes
-        createStops(0);
-        createStops(1);
-        createStops(2);
-    }
-    
-    public static void createStops(int routeNumber) {
-        //5 Stops
-        /*
-         Stop type 0 = Low Population (75 decrease)    
-         Stop type 1 = Medium Population (No Change)
-         Stop type 2 = High Population (75 increase)
-         */
-        for (int i = 0; i < 5; i++) {
-            Random randomGenerator = new Random();
-            int type = randomGenerator.nextInt(3);
-            //busRoutesArray[routeNumber][i] = randomInt;
-            routes[routeNumber][i] = new BusStop();
+        //createStops(0);
+        //createStops(1);
+        //createStops(2);
+        for (int y = 0; y < 5; y++) {
+            for (int x = 0; x < 3; x++) {
+                Random randomGenerator = new Random();
+                int rand = randomGenerator.nextInt(3);
+                routes[x][y] = new BusStop(rand);
+                System.out.print(routes[x][y].type);
+            }
         }
     }
+    
+ 
 }

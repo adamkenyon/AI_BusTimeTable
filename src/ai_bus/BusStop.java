@@ -11,13 +11,10 @@ import java.util.*;
  * @author 1314994
  */
 public class BusStop {
-    
-    public BusStop(){
-        int type;
-        List<Passenger> waitingPassengers = new ArrayList();
-    }
-    
-     public static void main(){
-         BusStop stop = new BusStop();
-     }
+    int type;
+    List<Passenger> waitingPassengers = new ArrayList();
+        
+    public BusStop(int x){
+        x = type;
+    } 
 }
