@@ -206,32 +206,32 @@ public class Ai_Bus_UI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bus1Label;
-    private javax.swing.JLabel bus1Passengers;
+    public static javax.swing.JLabel bus1Passengers;
     private javax.swing.JLabel bus2Label;
-    private javax.swing.JLabel bus2Passengers;
+    public static javax.swing.JLabel bus2Passengers;
     private javax.swing.JLabel bus3Label;
-    private javax.swing.JLabel bus3Passengers;
+    public static javax.swing.JLabel bus3Passengers;
     private javax.swing.JLabel bus4Label;
-    private javax.swing.JLabel bus4Route;
+    public static javax.swing.JLabel bus4Route;
     private javax.swing.JButton exitButton;
     private javax.swing.JToggleButton goButton;
     private javax.swing.JLabel route1Header;
-    private javax.swing.JLabel route1Stop1Label;
-    private javax.swing.JLabel route1Stop2Label;
-    private javax.swing.JLabel route1Stop3Label;
-    private javax.swing.JLabel route1Stop4Label;
-    private javax.swing.JLabel route1Stop5Label;
+    public static javax.swing.JLabel route1Stop1Label;
+    public static javax.swing.JLabel route1Stop2Label;
+    public static javax.swing.JLabel route1Stop3Label;
+    public static javax.swing.JLabel route1Stop4Label;
+    public static javax.swing.JLabel route1Stop5Label;
     private javax.swing.JLabel route2Header;
-    private javax.swing.JLabel route2Stop1Label;
-    private javax.swing.JLabel route2Stop2Label;
-    private javax.swing.JLabel route2Stop3Label;
-    private javax.swing.JLabel route2Stop4Label;
-    private javax.swing.JLabel route2Stop5Label;
+    public static javax.swing.JLabel route2Stop1Label;
+    public static javax.swing.JLabel route2Stop2Label;
+    public static javax.swing.JLabel route2Stop3Label;
+    public static javax.swing.JLabel route2Stop4Label;
+    public static javax.swing.JLabel route2Stop5Label;
     private javax.swing.JLabel route3Header;
-    private javax.swing.JLabel route3Stop1Label;
-    private javax.swing.JLabel route3Stop2Label;
-    private javax.swing.JLabel route3Stop3Label;
-    private javax.swing.JLabel route3Stop4Label;
-    private javax.swing.JLabel route3Stop5Label;
+    public static javax.swing.JLabel route3Stop1Label;
+    public static javax.swing.JLabel route3Stop2Label;
+    public static javax.swing.JLabel route3Stop3Label;
+    public static javax.swing.JLabel route3Stop4Label;
+    public static javax.swing.JLabel route3Stop5Label;
     // End of variables declaration//GEN-END:variables
 }
